@@ -20,7 +20,7 @@ import (
 
 const (
 	randString   = "ABCDEFGHIJKLMNOPQRSTUVWXYZadcdefghijklmnopqrstuvwxyz1234567890"
-	fontFilePath = "/home/steven/data/golang/lib/captcha/font/Arcade_Book.ttf"
+	fontFilePath = "./font/Arcade_Book.ttf"
 	noisetext    = ".*^-~"
 	W            = 120
 	H            = 80
