@@ -12,6 +12,7 @@ import(
 func main(){
     capLen := 4 
     cap := captcha.NewCaptcha(capLen)
+    //cap.SetStoreMode(captcha.NewRedisStore("127.0.0.1","passowrd","5379", 0, 300))
     cap.SetStoreMode(captcha.MemoryStoreMode)
     id, b64s, err := cap.GenerateCaptcha()
     if err != nil{
