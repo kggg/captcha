@@ -43,6 +43,10 @@ func NewCaptcha(codelen int) *Captcha {
 	}
 }
 
+func (c *Captcha)SetStoreMode(s Storer){
+	c.Store = s
+}
+
 // getRandString 获取随机字符串
 func (c *Captcha) getRandString(stringLen int) string {
 	var result []byte
